@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <div class="container">
+      <app-header></app-header>
+
+      <main class="main-content">
+        <section class="form-section">
+          <note-form></note-form>
+        </section>
+
+        <!-- Tab Navigation -->
+        <section class="tabs-section">
+          <div class="tabs">
+            <button class="tab-button active" data-tab="active">
+              📝 Catatan Aktif
+            </button>
+            <button class="tab-button" data-tab="archived">
+              📦 Catatan Diarsipkan
+            </button>
+          </div>
+        </section>
+
+        <section class="notes-section">
+          <div class="tab-content" id="active-notes">
+            <h2>Daftar Catatan</h2>
+            <div id="notes-container" class="notes-grid">
+              <!-- Notes akan ditampilkan di sini -->
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="archived-notes">
+            <h2>Catatan Diarsipkan</h2>
+            <div id="archived-container" class="notes-grid">
+              <!-- Archived notes akan ditampilkan di sini -->
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
